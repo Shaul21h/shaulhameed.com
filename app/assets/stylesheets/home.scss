@@ -1,0 +1,92 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+
+  background: image_url("/assets/mac-wallpaper.jpg");
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+}
+
+.terminal{
+
+  color: #565656;
+
+  .window{
+
+    width: 50%;
+    height: 400px;
+
+    position: absolute;
+    top: 10%;
+    left: 25%;
+
+    .terminal-title{
+      height: 25px;
+      background: #f7f7f7;
+      background: -moz-linear-gradient(top,  #f7f7f7 0%, #B8B8B8 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#B8B8B8)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  #f7f7f7 0%,#B8B8B8 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  #f7f7f7 0%,#B8B8B8 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  #f7f7f7 0%,#B8B8B8 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  #f7f7f7 0%,#B8B8B8 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#B8B8B8',GradientType=0 ); /* IE6-9 */
+      -webkit-border-top-left-radius: 5px;
+      -webkit-border-top-right-radius: 5px;
+      -moz-border-radius-topleft: 5px;
+      -moz-border-radius-topright: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+
+      .terminal-actions{
+        float: left;
+        width: 60px;
+        margin: 6px 8px;
+        .circle{
+          width: 12px;
+          font-size: 8px;
+          padding: 2px;
+          text-align: center;
+          border-radius: 12px;
+          float: left;
+          font-weight: bold;
+          margin-right: 8px;
+          i{
+            visibility: hidden;
+          }
+        }
+        .red{
+          background: #fb4d4c;
+        }
+        .yellow{
+          background: #fcb22d;
+        }
+        .green{
+          background: #2fc739;
+        }
+
+      }
+
+      .terminal-brand{
+        margin-left: 10%;
+        i.fa{
+          color: #7ac9f3;
+        }
+      }
+
+    }
+
+    .terminal-container{
+      height: 375px;
+      background-color: #ffffff;
+      padding: 1px 8px;
+      font-family: FreeMono, monospace;
+
+    }
+
+  }
+
+
+}

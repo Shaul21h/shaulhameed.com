@@ -1,0 +1,25 @@
+{
+  "name": "shaulhameed.com",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Shaul21h/shaulhameed.com",
+  "authors": [
+    "shaul21h@gmail.com"
+  ],
+  "description": "Personal website",
+  "keywords": [
+    "shaulhameed.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib/assets",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.5.0"
+  }
+}
