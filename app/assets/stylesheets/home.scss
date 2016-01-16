@@ -10,9 +10,14 @@ body{
   background-size: 100%;
 }
 
-.terminal{
+.terminal_custom{
 
   color: #565656;
+  font-family: monospace;
+  /*font-family: FreeMono, monospace; this don't work on Android */
+  background-color: #000;
+  font-size: 12px;
+  line-height: 25px;
 
   .window{
 
@@ -80,7 +85,7 @@ body{
 
     .terminal-container{
       height: 375px;
-      background-color: #ffffff;
+      background-color: #000000;
       padding: 1px 8px;
       font-family: FreeMono, monospace;
 
@@ -89,4 +94,51 @@ body{
   }
 
 
+}
+.download_link{
+  visibility: hidden;
+}
+
+.profile {
+
+  .white {
+    color: #c6c6c6;
+  }
+  .bold{
+    font-weight: bold;
+  }
+  .key {
+    color: #2df5e0 !important;
+  }
+  .value{
+    color: #ffffff !important;
+  }
+
+  width: 100%;
+  font-weight: bold;
+
+  .experience{
+    width: 100%;
+
+    .experience-section{
+
+      h6{
+        color: #ffffff;
+      }
+
+      >div{
+        padding-left:5px
+      }
+      .experience-title{
+        width: 100%;
+      }
+    }
+  }
+
+  .addtional-experience{
+
+    ul > li{
+      line-height: 1.5;
+    }
+  }
 }
