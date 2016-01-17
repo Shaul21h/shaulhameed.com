@@ -32,10 +32,10 @@ function Texts(){
             "\n "+
             "\nOptions: "+
             "\n "+
-            "\n\t basicinfo - Returns a basic information"+
+            "\n\t basicinfo - Returns basic information"+
             "\n\t publicprofiles - Returns public profiles"+
             "\n\t experience - Returns professional exprience"+
-            "\n\t profile - Returns a complete profile"+
+            "\n\t profile - Returns complete profile"+
             "\n "
         ,
 
