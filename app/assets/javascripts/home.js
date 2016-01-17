@@ -33,6 +33,8 @@
             return
         }
 
+        command = command.toLowerCase();
+
         option = command.split('fetch')[1].trim()
 
         if(option.constructor == String){
@@ -72,20 +74,22 @@
 
                     term.push(function(command){
 
+                        var message_to_be_printed = ""
+
                         if(/no$/i.test(command.trim())){
 
-                            term.echo("[[b;#2ABEFF;]Thank you for checking out my profile]")
-                            term.pop();
+                            message_to_be_printed = "[[b;#2ABEFF;]Thank you for checking out my profile]"
 
                         }
                         else if(/yes$/i.test(command.trim())){
 
                             document.getElementById('download_profile').click()
 
-                            term.echo("[[b;#2ABEFF;]Thank you for downloading my profile]")
-                            term.pop();
+                            message_to_be_printed = "[[b;#2ABEFF;]Thank you for downloading my profile]"
 
                         }
+                        term.echo(message_to_be_printed)
+                        term.pop();
 
 
                     },
