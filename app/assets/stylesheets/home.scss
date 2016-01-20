@@ -4,7 +4,7 @@
 
 body{
 
-  background: image_url("/assets/mac-wallpaper.jpg");
+  background: image_url("/assets/mac-wallpaper.jpg") no-repeat;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   background-size: 100%;
@@ -141,4 +141,12 @@ body{
       line-height: 1.5;
     }
   }
+}
+
+
+/* Portrait and Landscape */
+@media only screen and (max-width: 320px) {
+
+  body { font-size: 2em; }
+
 }

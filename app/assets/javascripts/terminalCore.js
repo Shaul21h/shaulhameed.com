@@ -1,38 +1,16 @@
-function TerminalCore(options){
-
-    var defaults = {
-        theme: "basic"
-    }
-
-    this.defaults = $.extend(defaults, options)
-
-
-}
-
-TerminalCore.prototype.init = function(term){
-    term.echo("Last login:"+ Date())
-}
-
-TerminalCore.prototype.getOptions = function(){
-    return this.defaults
-}
-
-
 function Commands(){
-
-    texts = new Texts()
 
     this.basicinfo = function(){
 
-        return texts.getBasicInfo()
+        return messages.basic_info
     }
 
     this.publicprofiles = function(){
-        return texts.getSocialProfiles()
+        return messages.social_profile
     }
 
     this.experience = function(){
-        return texts.getExperience()
+        return messages.experience
     }
 
     this.profile = function(){
@@ -40,9 +18,13 @@ function Commands(){
     }
 
     this.help = function(){
-        return texts.getHelp()
-
+        return messages.commands
     }
 
-
+    this.descriptions = {
+        basicinfo : "Returns basic information",
+        publicprofiles: "Returns public profiles",
+        experience : "Returns professional exprience",
+        profile : "Returns complete profile"
+    }
 }
