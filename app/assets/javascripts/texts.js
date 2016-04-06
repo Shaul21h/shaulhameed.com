@@ -50,7 +50,8 @@ var messages = {
     "\n [[b;#2df5e0;]Twitter]   :    https://twitter.com/ziaudeen_ar"+
     "\n ",
     experience:
-    "\n [[b;#2df5e0;]Software Engineer] - [[b;#ffffff;]Poshmark India] [April 2015 - Present]"+
+    "\n [[b;#2df5e0;]Lead Software Engineer] - [[b;#ffffff;]Cloud Maxis] [Mar 2016 - Present]"+
+    "\n [[b;#2df5e0;]Software Engineer] - [[b;#ffffff;]Poshmark India] [April 2015 - Feb 2016]"+
     "\n [[b;#2df5e0;]Associate Software Engineer] - [[b;#ffffff;]Pearson English] [May 2013 - March 2015]"+
     "\n [[b;#2df5e0;]Software Developer] - [[b;#ffffff;]The Customer Labs] [June 2012 - April 2013]"+
     "\n "
