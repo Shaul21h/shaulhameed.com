@@ -1,3 +1,4 @@
+'use strict'
 if(!String.prototype.format){
     String.prototype.format = function() {
         var s = this;
@@ -13,12 +14,12 @@ if(!String.prototype.format){
 
 
     var generateCommands = function(){
-        _commands = new Commands();
+        var _commands = new Commands();
 
-        cmdOptions = "\nUsage: fetch [options] \n \nOptions:  \n "
+        var cmdOptions = "\nUsage: fetch [options] \n \nOptions:  \n "
 
 
-        for (command in _commands){
+        for (var command in _commands){
 
             if(_commands.hasOwnProperty(command) && command !== "descriptions"){
 
@@ -85,7 +86,7 @@ if(!String.prototype.format){
     }
 
     var terminalFn = function terminalFn(command, term){
-        commands = new Commands()
+        var commands = new Commands()
         var error_msg ="[[;#FF4109;]Err: Command not found]"
         if(!/^fetch\s/.test(command) ){
 
@@ -100,7 +101,7 @@ if(!String.prototype.format){
 
         command = command.toLowerCase();
 
-        option = command.split('fetch')[1].trim()
+        var option = command.split('fetch')[1].trim()
 
         if(option.constructor == String){
             option = option.replace(/-+/g,"")
@@ -111,7 +112,7 @@ if(!String.prototype.format){
 
         if(commands[option]){
 
-            output = commands[option]()
+            var output = commands[option]()
             if(output.constructor != String && output.then){
 
                 options.raw = true;
@@ -137,7 +138,7 @@ if(!String.prototype.format){
 
 
 
-        terminalOptions = {
+        var terminalOptions = {
             prompt:'[[b;#2ABEFF;]root]@shaulhameed [[b;#FF4109;]$] ',
             onInit: function init(term){
                 term.echo("Last login:"+ Date())
