@@ -61,12 +61,12 @@ if(!String.prototype.format){
 
                 var message_to_be_printed = ""
 
-                if(/no$/i.test(command.trim())){
+                if(/no$/i.test(command.trim()) || /^n$/ig.test(command.trim())){
 
                     message_to_be_printed = "[[b;#2ABEFF;]Thank you for checking out my profile]"
 
                 }
-                else if(/yes$/i.test(command.trim())){
+                else if(/yes$/i.test(command.trim()) || /^y$/ig.test(command.trim())){
 
                     document.getElementById('download_profile').click()
 
